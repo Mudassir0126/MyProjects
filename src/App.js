@@ -1,10 +1,9 @@
-import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import routes from './DataArrays/RoutesData';
-import Project from './Components/Projects';
-import BackButton from './BackButton';
-
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Project from "./Components/Projects";
+import BackButton from "./Components/BackButton";
+import routes from "./DataArrays/RoutesData";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <div className="app-container">
         <div className="main-content">
           <Routes>
-            <Route path="/" element={<Project />} />
+            <Route path="/MyProjects" element={<Project />} />
             {routes.map((route, index) => (
               <Route key={index} path={route.path} element={route.element} />
             ))}
@@ -24,6 +23,5 @@ function App() {
       </div>
     </Router>
   );
-
 }
 export default App;

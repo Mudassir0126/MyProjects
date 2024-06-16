@@ -2,9 +2,9 @@
 import StickyNotes from '../Projects/Draggable-Sticky-Notes/App';
 
 const routes = [
-  { name :"Sticky Notes",path: "/stickynotes", element: <StickyNotes /> },
-  { name :"Search bar",path: "/SearchBar", element: <StickyNotes /> },
-  { name :"List",path: "/List", element: <StickyNotes /> },
+  { name :"Sticky Notes",path: "/MyProjects/stickynotes", element: <StickyNotes /> },
+  { name :"Search bar",path: "/MyProjects/SearchBar", element: <StickyNotes /> },
+  { name :"List",path: "/MyProjects/List", element: <StickyNotes /> },
   // Add more routes as needed
 ];
 
