@@ -12,7 +12,7 @@ function App() {
       <div className="app-container">
         <div className="main-content">
           <Routes>
-            <Route path="MyProjects/" element={<Project />} />
+            <Route path="/" element={<Project />} />
             {routes.map((route, index) => (
               <Route key={index} path={route.path} element={route.element} />
             ))}
